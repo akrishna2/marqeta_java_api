@@ -117,7 +117,6 @@ public class TransactionBase {
                 .body(data)
                 .post()
                 .then().extract().response();
-        System.out.println(response.body().prettyPrint());
         Assert.assertEquals(response.getStatusCode(), 201);
     }
 

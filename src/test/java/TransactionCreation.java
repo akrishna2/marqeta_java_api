@@ -1,6 +1,3 @@
-package apiTests;
-
-
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Stories;
 import baseClass.TransactionBase;
@@ -11,7 +8,7 @@ public class TransactionCreation {
     public void tc01_TransactionCreationTest() {
         TransactionBase tb = new TransactionBase();
         tb.createUser();
-//        tb.retrieveUser();
+        tb.retrieveUser();
         tb.getCardProduct();
         tb.CreateCard();
         tb.CreateTransaction();
